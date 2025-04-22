@@ -1,0 +1,110 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              display: Title
+          -
+            handle: car_category
+            field:
+              type: terms
+              taxonomies:
+                - car_category
+              display: 'Car category'
+              mode: select
+          -
+            handle: car_brand
+            field:
+              type: terms
+              taxonomies:
+                - car_brand
+              display: 'Car brand'
+              mode: select
+              max_items: 1
+          -
+            handle: transmission
+            field:
+              options:
+                manualTransmission: Manual
+                automaticTransmission: Automatic
+              max_items: 1
+              type: select
+              display: Transmission
+              width: 50
+          -
+            handle: date_of_registration
+            field:
+              earliest_date: '2020-01-01'
+              type: date
+              display: 'Date of registration'
+              width: 50
+          -
+            handle: fuel_type
+            field:
+              options:
+                superUnl: Unleaded
+                diesel: Diesel
+              max_items: 1
+              type: select
+              display: 'Fuel type'
+              width: 50
+          -
+            handle: air_condition
+            field:
+              options:
+                airCondition: 'Air condition'
+                clima: Clima
+              type: radio
+              display: 'Air condition'
+              width: 50
+          -
+            handle: doors
+            field:
+              type: integer
+              display: Doors
+              width: 50
+          -
+            handle: seats
+            field:
+              type: integer
+              display: Seats
+              width: 50
+          -
+            handle: special_categories
+            field:
+              options:
+                four-wheel-drive: 4x4
+                cabrio: Cabrio
+                crossover-suv: 'Crossover / SUV'
+                luxury: Luxury
+                van: Van
+                mini-bus: 'Mini Bus'
+              type: checkboxes
+              display: 'Special categories'
+          -
+            handle: image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Image
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+title: Car

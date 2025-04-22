@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f264421dbd05909ef7ca6296947677a",
+    "content-hash": "aa6e769fc05f2d0286b4b34b141b6e0c",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -4127,16 +4127,16 @@
         },
         {
             "name": "reachweb/statamic-livewire-filters",
-            "version": "v2.7.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reachweb/statamic-livewire-filters.git",
-                "reference": "711671514363f2c1a1f806b608eddf380ef56da2"
+                "reference": "8628e4ff27aa110572832e83fc8679aa8275565f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reachweb/statamic-livewire-filters/zipball/711671514363f2c1a1f806b608eddf380ef56da2",
-                "reference": "711671514363f2c1a1f806b608eddf380ef56da2",
+                "url": "https://api.github.com/repos/reachweb/statamic-livewire-filters/zipball/8628e4ff27aa110572832e83fc8679aa8275565f",
+                "reference": "8628e4ff27aa110572832e83fc8679aa8275565f",
                 "shasum": ""
             },
             "require": {
@@ -4152,6 +4152,7 @@
                 "phpunit/phpunit": "^10.5|^11.0",
                 "spatie/laravel-ray": "^1.0"
             },
+            "default-branch": true,
             "type": "statamic-addon",
             "extra": {
                 "laravel": {
@@ -4189,9 +4190,9 @@
             "support": {
                 "email": "info@reach.gr",
                 "issues": "https://github.com/reachweb/statamic-livewire-filters/issues",
-                "source": "https://github.com/reachweb/statamic-livewire-filters/tree/v2.7.0"
+                "source": "https://github.com/reachweb/statamic-livewire-filters/tree/master"
             },
-            "time": "2025-03-29T15:37:14+00:00"
+            "time": "2025-04-19T15:37:05+00:00"
         },
         {
             "name": "rebing/graphql-laravel",
@@ -10590,7 +10591,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "reachweb/statamic-livewire-filters": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

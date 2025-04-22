@@ -13,7 +13,7 @@
         "php": "^8.2",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "reachweb/statamic-livewire-filters": "^2.7",
+        "reachweb/statamic-livewire-filters": "dev-master",
         "statamic/cms": "^5.0"
     },
     "require-dev": {
