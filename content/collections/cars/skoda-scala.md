@@ -27,4 +27,5 @@ content:
       -
         type: text
         text: 'Rent a car in Kos. Skoda Scala.'
+price: 13000
 ---

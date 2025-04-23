@@ -21,4 +21,5 @@ seo_title: 'Rent a car in Kos Island'
 seo_description: 'Rent Skoda Kamiq Automatic in Kos Island.'
 date_of_registration: '2022-01-01'
 car_brand: skoda
+price: 14000
 ---

@@ -17,4 +17,5 @@ fuel_type: diesel
 seo_no_index: false
 date_of_registration: '2023-01-01'
 car_brand: hyundai
+price: 13000
 ---

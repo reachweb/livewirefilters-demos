@@ -19,4 +19,5 @@ updated_at: 1730825961
 resrv_availability: disabled
 car_brand: toyota
 date_of_registration: '2022-05-18'
+price: 15000
 ---

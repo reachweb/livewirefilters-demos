@@ -27,4 +27,5 @@ content:
       -
         type: text
         text: 'Toyota Aygo X Play Cabrio Automatic'
+price: 16000
 ---

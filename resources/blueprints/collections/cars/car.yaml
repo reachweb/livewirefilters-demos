@@ -107,4 +107,9 @@ tabs:
               type: slug
               localizable: true
               validate: 'max:200'
+          -
+            handle: price
+            field:
+              type: text
+              display: Price
 title: Car

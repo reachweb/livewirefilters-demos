@@ -21,4 +21,5 @@ seo_title: 'Rent a convertible car in Kos'
 seo_description: 'Kos convertible car hire'
 car_brand: audi
 date_of_registration: '2020-01-01'
+price: 25000
 ---

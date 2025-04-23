@@ -19,4 +19,5 @@ resrv_availability: ae0401e7-40de-4e98-aeb0-83744518ea41
 image: cars/tcross.jpg
 car_brand: vw
 date_of_registration: '2024-11-05'
+price: 19000
 ---

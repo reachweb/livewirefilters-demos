@@ -21,4 +21,5 @@ seo_title: 'Kos Car Hire'
 seo_description: 'Hire hybrid car in kos island'
 car_brand: toyota
 date_of_registration: '2024-01-01'
+price: 17000
 ---

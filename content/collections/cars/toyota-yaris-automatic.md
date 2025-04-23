@@ -26,4 +26,5 @@ content:
       -
         type: text
         text: 'Rent a car in Kos. Toyota Yaris Automatic.'
+price: 15000
 ---

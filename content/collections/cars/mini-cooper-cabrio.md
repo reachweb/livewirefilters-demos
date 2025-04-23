@@ -21,4 +21,5 @@ seo_title: 'Rent cabrio car in Kos Island'
 seo_description: 'Rent cabrio car in Kos Island'
 car_brand: mini
 date_of_registration: '2020-01-01'
+price: 17000
 ---

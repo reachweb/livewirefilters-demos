@@ -27,4 +27,5 @@ content:
       -
         type: text
         text: 'Rent a car in Kos. Kia Stonic 2023.'
+price: 13000
 ---

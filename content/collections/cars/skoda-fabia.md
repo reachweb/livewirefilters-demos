@@ -25,4 +25,5 @@ content:
       -
         type: text
         text: 'Rent a car in Kos. Scoda Fabia 2023.'
+price: 15000
 ---

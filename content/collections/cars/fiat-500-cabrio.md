@@ -19,4 +19,5 @@ resrv_availability: disabled
 seo_no_index: false
 car_brand: fiat
 date_of_registration: '2021-01-01'
+price: 8000
 ---

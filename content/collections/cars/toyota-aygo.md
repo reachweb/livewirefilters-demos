@@ -20,4 +20,5 @@ seo_description: |-
   Kos Island car hire delivery to hotel.
 car_brand: toyota
 date_of_registration: '2021-01-01'
+price: 14000
 ---

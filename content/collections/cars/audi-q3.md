@@ -18,4 +18,5 @@ updated_at: 1705448196
 resrv_availability: 93c6a617-804e-4c4c-b936-8739638e652b
 car_brand: audi
 date_of_registration: '2022-01-01'
+price: 27000
 ---

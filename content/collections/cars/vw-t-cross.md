@@ -19,4 +19,5 @@ resrv_availability: fe747a49-b9a4-4f88-a4d4-f602126edd08
 seo_title: 'Rent a brand new VW T-Cross in Kos'
 car_brand: vw
 date_of_registration: '2023-01-01'
+price: 18000
 ---

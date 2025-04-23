@@ -16,4 +16,5 @@ updated_at: 1704750373
 resrv_availability: d8027c0b-6905-42c9-9cec-edbb9863fe7c
 car_brand: vw
 date_of_registration: '2021-01-01'
+price: 16000
 ---

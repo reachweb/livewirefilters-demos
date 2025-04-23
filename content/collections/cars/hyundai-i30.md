@@ -16,4 +16,5 @@ updated_at: 1704748814
 resrv_availability: e3444cf1-853b-4c78-9d1c-ff65a703db0d
 car_brand: hyundai
 date_of_registration: '2020-01-01'
+price: 10000
 ---

@@ -18,4 +18,5 @@ image: cars/ready_vw_transporter_2019.jpg
 resrv_availability: c125b386-6e95-45f8-8e22-0b0b94969d12
 car_brand: vw
 date_of_registration: '2020-01-01'
+price: 15000
 ---

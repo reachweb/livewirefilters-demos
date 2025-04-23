@@ -26,4 +26,5 @@ content:
       -
         type: text
         text: 'Rent a car in Kos. Toyota Aygo X Play.'
+price: 16000
 ---

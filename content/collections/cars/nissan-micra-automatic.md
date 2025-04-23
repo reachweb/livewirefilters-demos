@@ -16,4 +16,5 @@ updated_at: 1704749059
 resrv_availability: disabled
 car_brand: nissan
 date_of_registration: '2022-01-01'
+price: 12000
 ---

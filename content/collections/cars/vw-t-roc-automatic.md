@@ -26,4 +26,5 @@ content:
       -
         type: text
         text: 'VW T-ROC Automatic'
+price: 16000
 ---

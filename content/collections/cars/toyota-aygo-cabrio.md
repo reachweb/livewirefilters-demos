@@ -18,4 +18,5 @@ updated_at: 1704749556
 resrv_availability: fca0a491-9042-4ba3-95ad-4e400aeb37b4
 car_brand: toyota
 date_of_registration: '2021-01-01'
+price: 14000
 ---

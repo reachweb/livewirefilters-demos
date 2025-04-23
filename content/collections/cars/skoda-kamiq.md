@@ -21,4 +21,5 @@ air_condition: airCondition
 fuel_type: superUnl
 date_of_registration: '2022-01-01'
 car_brand: skoda
+price: 14000
 ---

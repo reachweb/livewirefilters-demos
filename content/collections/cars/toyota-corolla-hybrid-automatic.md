@@ -20,4 +20,5 @@ updated_at: 1705684796
 resrv_availability: 7815f8c1-b6fe-4b13-9617-5368ad6502f6
 car_brand: toyota
 date_of_registration: '2022-01-01'
+price: 15000
 ---

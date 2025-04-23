@@ -26,4 +26,5 @@ content:
       -
         type: text
         text: 'Rent a car in Kos. Hyundai i10 Automatic.'
+price: 11000
 ---

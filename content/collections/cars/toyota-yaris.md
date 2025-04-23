@@ -17,4 +17,5 @@ fuel_type: superUnl
 seo_no_index: false
 car_brand: toyota
 date_of_registration: '2023-01-01'
+price: 16000
 ---

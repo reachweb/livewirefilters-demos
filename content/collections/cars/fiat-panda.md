@@ -16,4 +16,5 @@ fuel_type: superUnl
 seo_no_index: false
 date_of_registration: '2023-01-01'
 car_brand: fiat
+price: 10000
 ---

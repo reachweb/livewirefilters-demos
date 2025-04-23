@@ -19,4 +19,5 @@ car_category:
   - j3
 car_brand: vw
 date_of_registration: '2021-01-01'
+price: 16000
 ---

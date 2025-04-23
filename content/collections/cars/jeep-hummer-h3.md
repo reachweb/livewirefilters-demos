@@ -20,4 +20,5 @@ special_categories:
 seo_no_index: false
 car_brand: jeep
 date_of_registration: '2020-01-01'
+price: 23000
 ---

@@ -19,4 +19,5 @@ resrv_availability: 254eeabd-6962-4143-8a2e-524b5c8773f5
 seo_social_media_image: yaris-cross.png
 car_brand: toyota
 date_of_registration: '2022-01-01'
+price: 15000
 ---

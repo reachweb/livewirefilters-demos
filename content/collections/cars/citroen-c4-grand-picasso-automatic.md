@@ -20,4 +20,5 @@ updated_at: 1704748572
 resrv_availability: fbf51daf-6463-4999-acf3-9d294edbe1e1
 car_brand: citroen
 date_of_registration: '2022-01-01'
+price: 11000
 ---

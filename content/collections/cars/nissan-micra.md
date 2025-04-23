@@ -16,4 +16,5 @@ updated_at: 1704749033
 resrv_availability: 5e3c3862-8636-4f2e-9be5-9e83a103e492
 car_brand: nissan
 date_of_registration: '2023-01-01'
+price: 13000
 ---

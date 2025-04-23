@@ -17,4 +17,5 @@ fuel_type: superUnl
 seo_no_index: false
 car_brand: hyundai
 date_of_registration: '2021-01-01'
+price: 11000
 ---
