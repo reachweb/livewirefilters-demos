@@ -1409,16 +1409,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.9.2",
+            "version": "v12.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "3db59aa0f382c349c78a92f3e5b5522e00e3301b"
+                "reference": "bd0d62bd9c5196728e428cd695d89ec8640daac1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/3db59aa0f382c349c78a92f3e5b5522e00e3301b",
-                "reference": "3db59aa0f382c349c78a92f3e5b5522e00e3301b",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/bd0d62bd9c5196728e428cd695d89ec8640daac1",
+                "reference": "bd0d62bd9c5196728e428cd695d89ec8640daac1",
                 "shasum": ""
             },
             "require": {
@@ -1620,7 +1620,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-04-16T15:44:19+00:00"
+            "time": "2025-04-30T13:48:39+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -2671,23 +2671,22 @@
         },
         {
             "name": "marcorieser/statamic-livewire",
-            "version": "v4.4.2",
+            "version": "v4.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/marcorieser/statamic-livewire.git",
-                "reference": "5e18d2ca2242665fe3bb51a2144f8bfa6dd379f7"
+                "reference": "1aec225a6949fe2656eaf5e9eef85906e39d4bc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/marcorieser/statamic-livewire/zipball/5e18d2ca2242665fe3bb51a2144f8bfa6dd379f7",
-                "reference": "5e18d2ca2242665fe3bb51a2144f8bfa6dd379f7",
+                "url": "https://api.github.com/repos/marcorieser/statamic-livewire/zipball/1aec225a6949fe2656eaf5e9eef85906e39d4bc6",
+                "reference": "1aec225a6949fe2656eaf5e9eef85906e39d4bc6",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "^10.0|^11.0|^12.0",
                 "livewire/livewire": "^3.0",
-                "php": "^8.1",
-                "statamic/cms": "^4.23.2|^5.0"
+                "php": "^8.2",
+                "statamic/cms": "^5.17.0"
             },
             "require-dev": {
                 "laravel/pint": "^1.21"
@@ -2733,7 +2732,7 @@
             "support": {
                 "docs": "https://github.com/marcorieser/statamic-livewire",
                 "issues": "https://github.com/marcorieser/statamic-livewire/issues",
-                "source": "https://github.com/marcorieser/statamic-livewire/tree/v4.4.2"
+                "source": "https://github.com/marcorieser/statamic-livewire/tree/v4.4.3"
             },
             "funding": [
                 {
@@ -2741,7 +2740,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-15T07:02:26+00:00"
+            "time": "2025-04-22T21:34:16+00:00"
         },
         {
             "name": "michelf/php-smartypants",
@@ -4131,12 +4130,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reachweb/statamic-livewire-filters.git",
-                "reference": "8628e4ff27aa110572832e83fc8679aa8275565f"
+                "reference": "4fbe83424661335177bc5dfd4b0962e033dca932"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reachweb/statamic-livewire-filters/zipball/8628e4ff27aa110572832e83fc8679aa8275565f",
-                "reference": "8628e4ff27aa110572832e83fc8679aa8275565f",
+                "url": "https://api.github.com/repos/reachweb/statamic-livewire-filters/zipball/4fbe83424661335177bc5dfd4b0962e033dca932",
+                "reference": "4fbe83424661335177bc5dfd4b0962e033dca932",
                 "shasum": ""
             },
             "require": {
@@ -4192,7 +4191,7 @@
                 "issues": "https://github.com/reachweb/statamic-livewire-filters/issues",
                 "source": "https://github.com/reachweb/statamic-livewire-filters/tree/master"
             },
-            "time": "2025-04-19T15:37:05+00:00"
+            "time": "2025-04-23T20:01:51+00:00"
         },
         {
             "name": "rebing/graphql-laravel",
@@ -4429,16 +4428,16 @@
         },
         {
             "name": "spatie/backtrace",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/backtrace.git",
-                "reference": "0f2477c520e3729de58e061b8192f161c99f770b"
+                "reference": "9807de6b8fecfaa5b3d10650985f0348b02862b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/backtrace/zipball/0f2477c520e3729de58e061b8192f161c99f770b",
-                "reference": "0f2477c520e3729de58e061b8192f161c99f770b",
+                "url": "https://api.github.com/repos/spatie/backtrace/zipball/9807de6b8fecfaa5b3d10650985f0348b02862b2",
+                "reference": "9807de6b8fecfaa5b3d10650985f0348b02862b2",
                 "shasum": ""
             },
             "require": {
@@ -4476,7 +4475,7 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/spatie/backtrace/tree/1.7.1"
+                "source": "https://github.com/spatie/backtrace/tree/1.7.2"
             },
             "funding": [
                 {
@@ -4488,7 +4487,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2024-12-02T13:28:15+00:00"
+            "time": "2025-04-28T14:55:53+00:00"
         },
         {
             "name": "spatie/blink",
@@ -7530,16 +7529,16 @@
         },
         {
             "name": "thecodingmachine/safe",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/safe.git",
-                "reference": "e14ac96126e6c19ea9d1f4029abb51487f4cf2cf"
+                "reference": "234f6fe34a0bead8c5ae1cfc0800539442e6f619"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/e14ac96126e6c19ea9d1f4029abb51487f4cf2cf",
-                "reference": "e14ac96126e6c19ea9d1f4029abb51487f4cf2cf",
+                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/234f6fe34a0bead8c5ae1cfc0800539442e6f619",
+                "reference": "234f6fe34a0bead8c5ae1cfc0800539442e6f619",
                 "shasum": ""
             },
             "require": {
@@ -7649,7 +7648,7 @@
             "description": "PHP core functions that throw exceptions instead of returning FALSE on error",
             "support": {
                 "issues": "https://github.com/thecodingmachine/safe/issues",
-                "source": "https://github.com/thecodingmachine/safe/tree/v3.1.0"
+                "source": "https://github.com/thecodingmachine/safe/tree/v3.1.1"
             },
             "funding": [
                 {
@@ -7665,7 +7664,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-12T06:41:26+00:00"
+            "time": "2025-04-28T07:56:17+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -7793,16 +7792,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.6.1",
+            "version": "v5.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "a59a13791077fe3d44f90e7133eb68e7d22eaff2"
+                "reference": "24ac4c74f91ee2c193fa1aaa5c249cb0822809af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/a59a13791077fe3d44f90e7133eb68e7d22eaff2",
-                "reference": "a59a13791077fe3d44f90e7133eb68e7d22eaff2",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/24ac4c74f91ee2c193fa1aaa5c249cb0822809af",
+                "reference": "24ac4c74f91ee2c193fa1aaa5c249cb0822809af",
                 "shasum": ""
             },
             "require": {
@@ -7861,7 +7860,7 @@
             ],
             "support": {
                 "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v5.6.1"
+                "source": "https://github.com/vlucas/phpdotenv/tree/v5.6.2"
             },
             "funding": [
                 {
@@ -7873,7 +7872,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-20T21:52:34+00:00"
+            "time": "2025-04-30T23:37:27+00:00"
         },
         {
             "name": "voku/portable-ascii",
@@ -8351,20 +8350,20 @@
         },
         {
             "name": "hamcrest/hamcrest-php",
-            "version": "v2.0.1",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hamcrest/hamcrest-php.git",
-                "reference": "8c3d0a3f6af734494ad8f6fbbee0ba92422859f3"
+                "reference": "f8b1c0173b22fa6ec77a81fe63e5b01eba7e6487"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/8c3d0a3f6af734494ad8f6fbbee0ba92422859f3",
-                "reference": "8c3d0a3f6af734494ad8f6fbbee0ba92422859f3",
+                "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/f8b1c0173b22fa6ec77a81fe63e5b01eba7e6487",
+                "reference": "f8b1c0173b22fa6ec77a81fe63e5b01eba7e6487",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3|^7.0|^8.0"
+                "php": "^7.4|^8.0"
             },
             "replace": {
                 "cordoval/hamcrest-php": "*",
@@ -8372,8 +8371,8 @@
                 "kodova/hamcrest-php": "*"
             },
             "require-dev": {
-                "phpunit/php-file-iterator": "^1.4 || ^2.0",
-                "phpunit/phpunit": "^4.8.36 || ^5.7 || ^6.5 || ^7.0"
+                "phpunit/php-file-iterator": "^1.4 || ^2.0 || ^3.0",
+                "phpunit/phpunit": "^4.8.36 || ^5.7 || ^6.5 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "extra": {
@@ -8396,9 +8395,9 @@
             ],
             "support": {
                 "issues": "https://github.com/hamcrest/hamcrest-php/issues",
-                "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
+                "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.1.1"
             },
-            "time": "2020-07-09T08:09:16+00:00"
+            "time": "2025-04-30T06:54:44+00:00"
         },
         {
             "name": "laravel/pail",
@@ -8546,16 +8545,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.41.0",
+            "version": "v1.42.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "fe1a4ada0abb5e4bd99eb4e4b0d87906c00cdeec"
+                "reference": "2edaaf77f3c07a4099965bb3d7dfee16e801c0f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/fe1a4ada0abb5e4bd99eb4e4b0d87906c00cdeec",
-                "reference": "fe1a4ada0abb5e4bd99eb4e4b0d87906c00cdeec",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/2edaaf77f3c07a4099965bb3d7dfee16e801c0f6",
+                "reference": "2edaaf77f3c07a4099965bb3d7dfee16e801c0f6",
                 "shasum": ""
             },
             "require": {
@@ -8605,7 +8604,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2025-01-24T15:45:36+00:00"
+            "time": "2025-04-29T14:26:46+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -8692,16 +8691,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.13.0",
+            "version": "1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "024473a478be9df5fdaca2c793f2232fe788e414"
+                "reference": "1720ddd719e16cf0db4eb1c6eca108031636d46c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/024473a478be9df5fdaca2c793f2232fe788e414",
-                "reference": "024473a478be9df5fdaca2c793f2232fe788e414",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/1720ddd719e16cf0db4eb1c6eca108031636d46c",
+                "reference": "1720ddd719e16cf0db4eb1c6eca108031636d46c",
                 "shasum": ""
             },
             "require": {
@@ -8740,7 +8739,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.0"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.1"
             },
             "funding": [
                 {
@@ -8748,7 +8747,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-02-12T12:17:51+00:00"
+            "time": "2025-04-29T12:36:36+00:00"
         },
         {
             "name": "nunomaduro/collision",

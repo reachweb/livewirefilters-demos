@@ -1,0 +1,61 @@
+title: Content
+fields:
+  -
+    handle: builder
+    field:
+      type: replicator
+      display: Builder
+      sets:
+        content_blocks:
+          display: 'Content Blocks'
+          sets:
+            grid:
+              display: Grid
+              icon: layout-grid-dots
+              fields:
+                -
+                  handle: grid
+                  field:
+                    type: grid
+                    display: Grid
+                    fields:
+                      -
+                        handle: title
+                        field:
+                          type: text
+                          display: Title
+                      -
+                        handle: text
+                        field:
+                          type: markdown
+                          display: Text
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+                      -
+                        handle: icon
+                        field:
+                          directory: svg
+                          type: icon
+                          display: Icon
+                -
+                  handle: grid_class
+                  field:
+                    type: text
+                    display: 'Grid class'
+            hero:
+              display: Hero
+              icon: layout-header
+              fields:
+                -
+                  handle: title
+                  field:
+                    type: markdown
+                    display: Title
+                -
+                  handle: subtitle
+                  field:
+                    type: markdown
+                    display: Subtitle

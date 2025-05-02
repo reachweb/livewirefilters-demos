@@ -1,0 +1,4 @@
+title: 'Site config'
+data:
+  site_name: 'Livewire Filters Demos'
+  logo: logos/slf-demos-logo.svg

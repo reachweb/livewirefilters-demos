@@ -2,3 +2,11 @@
 @plugin "@tailwindcss/typography";
 @source "../views";
 @source "../../content";
+
+@utility container {
+    margin-inline: auto;
+}
+
+@theme {
+    --color-main: #082F49;
+}
