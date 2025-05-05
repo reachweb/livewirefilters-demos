@@ -2,3 +2,7 @@ name: 'Iosif Chatzimichail'
 super: true
 id: 935d2204-f6fd-4b26-ac58-6c66c4675ef1
 password_hash: $2y$12$hn2mlwSf7qUyiOdoXcIVKu4rXT8ZBc/tBoTm3p/.sWpLfuZWkgm5S
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

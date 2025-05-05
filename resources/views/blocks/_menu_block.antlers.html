@@ -1,0 +1,20 @@
+
+<nav aria-label="Main navigation" class="main-navigation">
+    <ul role="menubar" class="flex justify-center space-x-4 xl:space-x-6">
+        {{ nav:main }}
+            <li role="none">
+                <a
+                    href="{{ url }}"
+                    role="menuitem"
+                    class="text-main hover:text-alt transition-colors duration-500"
+                    {{ if is_current || is_ancestor }}
+                    aria-current="page"
+                    class="text-main font-bold underline"
+                    {{ /if }}
+                >
+                    {{ title }}
+                </a>
+            </li>
+        {{ /nav:main }}
+    </ul>
+</nav>

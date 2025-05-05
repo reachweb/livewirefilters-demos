@@ -1,8 +1,21 @@
 ---
-title: Home
 id: home
-template: home
 blueprint: pages
+title: Home
+template: home
+builder:
+  -
+    id: ma767gsf
+    title: |-
+      Welcome to the demo website for
+      **Statamic Livewire Filters**
+    type: hero
+    enabled: true
+    subtitle: |-
+      In this demo Statamic installation you can check the various
+       **examples** to see what Livewire Filters is able to do.
+updated_by: 935d2204-f6fd-4b26-ac58-6c66c4675ef1
+updated_at: 1746441563
 ---
 ## Welcome to your brand new Statamic site!
 

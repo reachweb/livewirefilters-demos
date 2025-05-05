@@ -18,6 +18,7 @@ fields:
                   field:
                     type: grid
                     display: Grid
+                    mode: stacked
                     fields:
                       -
                         handle: title
@@ -30,16 +31,20 @@ fields:
                           type: markdown
                           display: Text
                       -
+                        handle: icon
+                        field:
+                          max_files: 1
+                          mode: grid
+                          container: assets
+                          folder: svg
+                          restrict: true
+                          type: assets
+                          display: Icon
+                      -
                         handle: link
                         field:
                           type: link
                           display: Link
-                      -
-                        handle: icon
-                        field:
-                          directory: svg
-                          type: icon
-                          display: Icon
                 -
                   handle: grid_class
                   field:
@@ -59,3 +64,44 @@ fields:
                   field:
                     type: markdown
                     display: Subtitle
+            button_set:
+              display: 'Button set'
+              icon: direction-buttons
+              fields:
+                -
+                  handle: buttons
+                  field:
+                    type: grid
+                    display: Buttons
+                    mode: stacked
+                    fields:
+                      -
+                        handle: label
+                        field:
+                          type: text
+                          display: Label
+                      -
+                        handle: link
+                        field:
+                          type: link
+                          display: Link
+                      -
+                        handle: icon
+                        field:
+                          max_files: 1
+                          mode: grid
+                          container: assets
+                          folder: svg
+                          restrict: true
+                          type: assets
+                          display: Icon
+                      -
+                        handle: button_class
+                        field:
+                          type: text
+                          display: 'Button class'
+                -
+                  handle: button_set_class
+                  field:
+                    type: text
+                    display: 'Button set class'
