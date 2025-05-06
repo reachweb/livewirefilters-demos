@@ -1,0 +1,21 @@
+<div class="container my-12 md:my-22">
+    <div class="{{ grid_class }}">
+        {{ grid }}
+        <div class="{{ grid_item_class}}">
+            <a class="block bg-white h-full p-4 lg:p-6 shadow transition-colors duration-300 hover:bg-slate-100" href="{{ link }}" title="{{ title }}">
+                <div class="flex items-center">
+                    <div class="mr-4 lg:mr-6">
+                        {{ svg src="{icon}" class="size-10 xl:size-12" }}
+                    </div>
+                    <div>
+                        <div class="text-2xl font-medium">{{ title }}</div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <div class="lg:text-lg disable-br">{{ text | strip_tags:p }}</div>
+                </div>
+            </a>
+        </div>
+        {{ /grid }}
+    </div>
+</div>

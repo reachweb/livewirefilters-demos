@@ -50,6 +50,11 @@ fields:
                   field:
                     type: text
                     display: 'Grid class'
+                -
+                  handle: grid_item_class
+                  field:
+                    type: text
+                    display: 'Grid Item Class'
             hero:
               display: Hero
               icon: layout-header

@@ -11,3 +11,9 @@
     --color-main: #082F49;
     --color-alt: #016081;
 }
+
+@layer components {
+    .disable-br br {
+        @apply hidden lg:inline;
+    }
+}
