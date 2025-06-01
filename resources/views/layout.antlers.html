@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ title ?? site:name }}</title>
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
+        <link rel="stylesheet" href="/vendor/statamic-livewire-filters/frontend/css/livewire-filters.css">
     </head>
     <body class="relative font-sans leading-normal text-slate-800 min-h-screen">
         {{ partial:blocks/bg }}
@@ -14,5 +15,6 @@
             {{ template_content }}
         </div>
         {{ partial:blocks/footer }}
+        <script src="/vendor/statamic-livewire-filters/frontend/js/livewire-filters.js"></script>
     </body>
 </html>

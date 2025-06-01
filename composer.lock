@@ -4175,12 +4175,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reachweb/statamic-livewire-filters.git",
-                "reference": "097ed173f8eb265f5c3796081b04ab98b2515691"
+                "reference": "47ee9e338a37ccf59ff97b0cb4686eea7c93e241"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reachweb/statamic-livewire-filters/zipball/097ed173f8eb265f5c3796081b04ab98b2515691",
-                "reference": "097ed173f8eb265f5c3796081b04ab98b2515691",
+                "url": "https://api.github.com/repos/reachweb/statamic-livewire-filters/zipball/47ee9e338a37ccf59ff97b0cb4686eea7c93e241",
+                "reference": "47ee9e338a37ccf59ff97b0cb4686eea7c93e241",
                 "shasum": ""
             },
             "require": {
@@ -4236,7 +4236,7 @@
                 "issues": "https://github.com/reachweb/statamic-livewire-filters/issues",
                 "source": "https://github.com/reachweb/statamic-livewire-filters/tree/master"
             },
-            "time": "2025-05-13T15:21:55+00:00"
+            "time": "2025-06-01T22:58:17+00:00"
         },
         {
             "name": "rebing/graphql-laravel",
