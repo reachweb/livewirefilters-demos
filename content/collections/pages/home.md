@@ -24,14 +24,6 @@ builder:
         icon: svg/basic.svg
         link: 'entry::e6364d9f-87ba-48b1-912e-6dbce0c823f8'
       -
-        id: maayg5p4
-        title: Advanced
-        text: |-
-          A more advanced example using all
-          the features like tags and sort.
-        link: 'entry::9f25ca63-c51a-4a88-9754-2d18e6e61cf2'
-        icon: svg/advanced.svg
-      -
         id: maayevk1
         title: Horizontal
         text: |-
@@ -39,6 +31,14 @@ builder:
           filters are on top of the entries.
         link: 'entry::1cc72c07-813d-41c5-adc6-a1715ba81af0'
         icon: svg/horizontal.svg
+      -
+        id: maayg5p4
+        title: Advanced
+        text: |-
+          A more advanced example using all
+          the features like tags and sort.
+        link: 'entry::9f25ca63-c51a-4a88-9754-2d18e6e61cf2'
+        icon: svg/advanced.svg
       -
         id: maaygu2e
         title: Preset
@@ -52,7 +52,7 @@ builder:
     enabled: true
     grid_item_class: 'col-span-12 lg:col-span-6 xl:col-span-3'
 updated_by: 935d2204-f6fd-4b26-ac58-6c66c4675ef1
-updated_at: 1746516613
+updated_at: 1748806054
 ---
 ## Welcome to your brand new Statamic site!
 

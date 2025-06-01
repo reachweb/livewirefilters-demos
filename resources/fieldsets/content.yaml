@@ -110,3 +110,38 @@ fields:
                   field:
                     type: text
                     display: 'Button set class'
+            text:
+              display: Text
+              icon: text-formatting-image-right
+              fields:
+                -
+                  handle: text
+                  field:
+                    remove_empty_nodes: false
+                    type: bard
+                    display: Text
+            code:
+              display: Code
+              icon: programming-script-code-brackets
+              fields:
+                -
+                  handle: code
+                  field:
+                    type: code
+                    display: Code
+                -
+                  handle: language
+                  field:
+                    options:
+                      -
+                        key: antlers
+                        value: Antlers
+                      -
+                        key: php
+                        value: PHP
+                      -
+                        key: blade
+                        value: Blade
+                    default: antlers
+                    type: button_group
+                    display: Language

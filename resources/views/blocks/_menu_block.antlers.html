@@ -6,10 +6,9 @@
                 <a
                     href="{{ url }}"
                     role="menuitem"
-                    class="text-main hover:text-alt transition-colors duration-500"
-                    {{ if is_current || is_ancestor }}
+                    class="text-main hover:text-alt transition-colors duration-500 {{ if is_current }}text-main font-bold underline{{ /if }}"
+                    {{ if is_current }}
                     aria-current="page"
-                    class="text-main font-bold underline"
                     {{ /if }}
                 >
                     {{ title }}

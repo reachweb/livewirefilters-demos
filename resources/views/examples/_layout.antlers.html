@@ -1,0 +1,13 @@
+{{ builder }}
+    {{ if type == "text" }}
+    {{ partial src="builder/{type}"}}
+    {{ /if }}
+{{ /builder }}
+
+{{ slot }}
+
+{{ builder }}
+    {{ if type == "code" }}
+    {{ partial src="builder/{type}"}}
+    {{ /if }}
+{{ /builder }}

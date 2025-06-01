@@ -1,10 +1,16 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms" {
+    strategy: class
+}
+
 @source "../views";
 @source "../../content";
 
 @utility container {
     margin-inline: auto;
+    max-width: 96rem;
+    @apply ps-2 pe-2 lg:ps-4 lg:pe-4;
 }
 
 @theme {
@@ -16,4 +22,22 @@
     .disable-br br {
         @apply hidden lg:inline;
     }
+}
+
+pre {
+    @apply overflow-x-auto;
+}
+
+pre code.torchlight {
+    @apply block py-4 min-w-max;
+}
+
+
+pre code.torchlight .line {
+    @apply px-4;
+}
+
+pre code.torchlight .line-number,
+pre code.torchlight .summary-caret {
+    @apply mr-4;
 }
