@@ -1,0 +1,83 @@
+{{ partial:examples/layout }}
+
+<div class="bg-white p-4 lg:p-6 shadow my-8 xl:my-12 not-prose" id="livewire-collection">
+    <div class="grid grid-cols-12 mb-8">
+        <div class="col-span-2 col-start-11">
+            {{ livewire:lf-sort
+                blueprint="cars.car"
+                fields="seats|doors"
+            }}
+        </div>
+    </div>
+    <div class="grid grid-cols-12 gap-8 lg:gap-12 xl:gap-16">
+        <div class="col-span-3">
+            <div class="mb-8">
+                <div class="mb-2 font-bold">
+                    Date of registration is after
+                </div>
+                {{ livewire:lf-date-filter
+                    blueprint="cars.car"
+                    field="date_of_registration"
+                    condition="is_after"
+                }}
+            </div>
+            <div class="mb-8">
+                <div class="mb-2 font-bold">
+                    Car brand
+                </div>
+                {{ livewire:lf-checkbox-filter
+                    blueprint="cars.car"
+                    field="car_brand"
+                    condition="taxonomy"
+                }}
+            </div>
+            <div class="mb-8">
+                <div class="mb-2 font-bold">
+                    Special category
+                </div>
+                {{ livewire:lf-checkbox-filter
+                    blueprint="cars.car"
+                    field="special_categories"
+                    condition="query_scope"
+                    modifier="multiselect"
+                }}
+            </div>
+            <div class="mb-8">
+                <div class="mb-2 font-bold">
+                    Transmission
+                </div>
+                {{ livewire:lf-select-filter
+                    blueprint="cars.car"
+                    field="transmission"
+                    condition="is"
+                }}
+            </div>
+            <div class="mb-8">
+                <div class="mb-2 font-bold">
+                    Fuel type
+                </div>
+                {{ livewire:lf-select-filter
+                    blueprint="cars.car"
+                    field="fuel_type"
+                    condition="is"
+                }}
+            </div>
+        </div>
+        <div class="col-span-9">
+            <div class="mb-4">
+                {{ livewire:lf-tags blueprint="cars.car" fields="date_of_registration|car_brand|special_categories|transmission|fuel_type" }}
+            </div>
+            <div class="@container">
+                <div>
+                    {{ livewire-collection:cars 
+                        paginate="6"
+                        taxonomy:car_brand:any="toyota|hyundai|vw"
+                        sort="seats:desc"
+                    }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ /partial:examples/layout }}
