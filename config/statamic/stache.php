@@ -38,7 +38,21 @@ return [
     */
 
     'stores' => [
-        //
+        'entries' => [
+            'class' => \Statamic\Stache\Stores\EntriesStore::class,
+            'directory' => base_path('content/collections'),
+            'indexes' => [
+                'title',
+                'car_brand',
+                'transmission',
+                'fuel_type',
+                'date_of_registration',
+                'special_categories',
+                'air_condition',
+                'seats',
+                'doors',
+            ],
+        ],
     ],
 
     /*
@@ -53,15 +67,7 @@ return [
     */
 
     'indexes' => [
-        'title',
-        'car_brand',
-        'transmission',
-        'fuel_type',
-        'date_of_registration',
-        'special_categories',
-        'air_condition',
-        'seats',
-        'doors',
+        //
     ],
 
     /*
