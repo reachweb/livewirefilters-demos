@@ -98,7 +98,7 @@ return [
         */
 
         'presets' => [
-            // 'small' => ['w' => 200, 'h' => 200, 'q' => 75, 'fit' => 'crop'],
+            'small' => ['w' => 720, 'q' => 85, 'fit' => 'max', 'format' => 'webp'],
         ],
 
         /*
