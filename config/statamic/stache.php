@@ -53,7 +53,15 @@ return [
     */
 
     'indexes' => [
-        //
+        'title',
+        'car_brand',
+        'transmission',
+        'fuel_type',
+        'date_of_registration',
+        'special_categories',
+        'air_condition',
+        'seats',
+        'doors',
     ],
 
     /*
