@@ -9,12 +9,6 @@
         "flat file",
         "laravel"
     ],
-    "repositories": [
-        {
-            "type": "path",
-            "url": "./addons/reachweb/statamic-livewire-filters"
-        }
-    ],
     "require": {
         "php": "^8.2",
         "laravel/framework": "^12.0",
