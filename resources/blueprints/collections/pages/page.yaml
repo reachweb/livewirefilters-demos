@@ -46,3 +46,8 @@ tabs:
               max_items: 1
               listable: false
               localizable: true
+          -
+            handle: hide_title
+            field:
+              type: toggle
+              display: 'Hide title'

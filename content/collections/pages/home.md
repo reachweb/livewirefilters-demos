@@ -60,7 +60,8 @@ builder:
     enabled: true
     grid_item_class: 'col-span-12 lg:col-span-6 xl:col-span-4'
 updated_by: 935d2204-f6fd-4b26-ac58-6c66c4675ef1
-updated_at: 1759914854
+updated_at: 1759941878
+hide_title: true
 ---
 ## Welcome to your brand new Statamic site!
 

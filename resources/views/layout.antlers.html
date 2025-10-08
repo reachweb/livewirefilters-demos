@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
+        <title>{{ unless hide_title }}{{ seo_title ?? title }} | {{ /unless }} {{ site_config:site_name }}</title>
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
         {{ livewire:styles }}
         <link rel="stylesheet" href="/vendor/statamic-livewire-filters/frontend/css/livewire-filters.css">
