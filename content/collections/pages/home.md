@@ -47,12 +47,20 @@ builder:
           to have preset values for the filters.
         link: 'entry::81c7019c-1933-41ca-b53d-f60316a5eeee'
         icon: svg/preset.svg
+      -
+        id: mghrmy7j
+        title: Animations
+        text: |-
+          An example that uses Alpine.js in order
+          to animate entries when filtering.
+        icon: svg/sneaker-move.svg
+        link: 'entry::dff3ab9c-562f-45e6-9e95-f1e3abe1c660'
     grid_class: 'grid grid-cols-12 gap-4 lg:gap-6 xl:gap-8'
     type: grid
     enabled: true
-    grid_item_class: 'col-span-12 lg:col-span-6 xl:col-span-3'
+    grid_item_class: 'col-span-12 lg:col-span-6 xl:col-span-4'
 updated_by: 935d2204-f6fd-4b26-ac58-6c66c4675ef1
-updated_at: 1748806054
+updated_at: 1759914854
 ---
 ## Welcome to your brand new Statamic site!
 

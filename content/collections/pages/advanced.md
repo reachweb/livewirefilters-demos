@@ -3,7 +3,7 @@ id: 9f25ca63-c51a-4a88-9754-2d18e6e61cf2
 blueprint: page
 title: Advanced
 updated_by: 935d2204-f6fd-4b26-ac58-6c66c4675ef1
-updated_at: 1748850629
+updated_at: 1759745916
 builder:
   -
     id: mbe8f1pm
@@ -17,6 +17,24 @@ builder:
       -
         type: bulletList
         content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'An '
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: LfToggleFilter
+                  -
+                    type: text
+                    text: ' to only show cars registered in 2025.'
           -
             type: listItem
             content:
@@ -176,9 +194,18 @@ builder:
     id: mbesg3sc
     code:
       code: |-
-        <div class="my-8 xl:my-12" id="livewire-collection">
+        <div id="livewire-collection">
             <div class="grid grid-cols-12 gap-8 lg:gap-12 xl:gap-16">
                 <div class="col-span-3">
+                    <div class="mb-8">
+                        {{ livewire:lf-toggle-filter
+                            blueprint="cars.car"
+                            field="date_of_registration"
+                            condition="gte"
+                            preset_value="2025-01-01"
+                            label="Only new vehicles"
+                        }}
+                    </div>
                     <div class="mb-8">
                         <div class="mb-2 font-bold">
                             Car brand
@@ -240,7 +267,7 @@ builder:
                             blueprint="cars.car"
                             field="date_of_registration"
                             min="2019"
-                            max="2024"
+                            max="2025"
                         }}
                     </div>
                     <div class="mb-8">
@@ -261,9 +288,11 @@ builder:
                     <div class="mb-4">
                         {{ livewire:lf-count }}
                     </div>
-        			<div>
-        			  {{ livewire-collection:cars paginate="9" scrollTo="#livewire-collection" }}
-        			</div>
+                    <div class="@container">
+                        <div>
+                            {{ livewire-collection:cars paginate="9" scrollTo="#livewire-collection" }}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

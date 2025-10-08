@@ -1,0 +1,112 @@
+<div
+    x-data="{ loading: false }"
+    x-init="
+        $wire.on('filter-updated', () => {
+            loading = true;
+        });
+        $wire.on('entries-updated', () => {
+            setTimeout(() => {
+                loading = false;
+            }, 150);
+        });
+    "
+>
+    {{ if (entries | length)  > 0 }}
+    <div class="grid grid-cols-1 @2xl:grid-cols-2 @5xl:grid-cols-3 @6xl:grid-cols-4 gap-8">
+        {{ entries }}
+        <div
+            class="flex flex-col bg-gray-100 h-full rounded p-4 transition-all duration-300 ease-out"
+            wire:key="{{ id }}"
+            x-data="{ index: {{ index }} }"
+            x-bind:style="`transition-delay: ${loading ? '0ms' : (index * 50) + 'ms'}`"
+            x-bind:class="loading ? 'opacity-0 scale-95 translate-y-4' : 'opacity-100 scale-100 translate-y-0'"
+        >
+            <div class="mb-2">
+                {{ image }}
+                <img class="object-cover rounded w-full h-[180px]" src="{{ glide:url preset="small" }}" alt="{{ title }}">
+                {{ /image }}
+            </div>
+            <div class="leading-none font-bold my-3">
+                {{ title }}
+            </div>
+            <div class="flex items-center mb-2">
+                <div class="mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                    </svg>
+                </div>
+                <div class="text-sm mr-2">
+                    <span class="font-bold">Seats:</span>
+                    {{ seats }}
+                </div>
+                <div class="text-sm">
+                    <span class="font-bold">Doors:</span>
+                    {{ doors }}
+                </div>
+            </div>                    
+            <div class="flex items-center mb-2">
+                <div class="mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M12 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M19 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M5 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M12 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M5 8l0 8" />
+                        <path d="M12 8l0 8" />
+                        <path d="M19 8v2a2 2 0 0 1 -2 2h-12" />
+                    </svg>
+                </div>
+                <div class="text-sm">
+                    <span class="font-bold">Transmission:</span>
+                    {{ transmission:label }}
+                </div>
+            </div>
+            <div class="flex items-center mb-2">
+                <div class="mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M14 11h1a2 2 0 0 1 2 2v3a1.5 1.5 0 0 0 3 0v-7l-3 -3" />
+                        <path d="M4 20v-14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v14" />
+                        <path d="M3 20l12 0" />
+                        <path d="M18 7v1a1 1 0 0 0 1 1h1" />
+                        <path d="M4 11l10 0" />
+                    </svg>
+                </div>
+                <div class="text-sm">
+                    <span class="font-bold">Fuel:</span>
+                    {{ fuel_type:label }}
+                </div>
+            </div>
+            <div class="flex items-center mb-2">
+                <div class="mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                    </svg>                      
+                </div>
+                <div class="text-sm">
+                    <span class="font-bold">Model year:</span>
+                    {{ date_of_registration format="Y" }}
+                </div>
+            </div>
+        </div>
+        {{ /entries }}
+    </div>
+    <div class="mt-12 flex justify-center">
+        {{ links }}
+    </div>
+    {{ else }}
+    <div class="text-center">
+        <div class="text-2xl font-bold mb-4">No results found</div>
+        <div class="text-gray-500">Try adjusting your filters.
+    </div>
+    {{ /if }}
+</div>

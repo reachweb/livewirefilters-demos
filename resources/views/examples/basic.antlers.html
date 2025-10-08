@@ -1,58 +1,160 @@
 {{ partial:examples/layout }}
 
-<div class="bg-white p-4 lg:p-6 shadow my-8 xl:my-12 not-prose" id="livewire-collection">
-    <div class="grid grid-cols-12 gap-8 lg:gap-12 xl:gap-16">
-        <div class="col-span-3">
-            <div class="mb-8">
-                <div class="mb-2 font-bold">
-                    Search by name
+<div 
+    class="bg-white p-4 lg:p-6 shadow my-4 md:my-8 xl:my-12 not-prose" 
+    id="livewire-collection"
+>
+    <div>
+        <div class="grid grid-cols-12 gap-4 md:gap-8 xl:gap-12">
+            <!-- Mobile Filter Button - visible only on mobile -->
+            <div class="col-span-12 xl:hidden mb-4">
+                <button
+                    x-on:click="$store.filters.open = true"
+                    type="button"
+                    class="w-full flex items-center justify-center gap-2 bg-main text-white px-4 py-3 rounded-md hover:bg-alt transition-colors duration-200"
+                    x-data="{ active: 0 }"
+                    x-on:entries-updated.window="active = $event.detail?.active ?? 0"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0m-9.75 0h9.75" />
+                    </svg>
+                    <span class="font-medium">Filters</span>
+                    <span
+                        x-cloak
+                        x-show="active > 0"
+                        x-text="active"
+                        class="bg-white text-main text-xs font-bold rounded-full min-w-[20px] h-5 px-1.5 flex items-center justify-center"
+                    ></span>
+                </button>
+            </div>
+
+            <!-- Overlay -->
+            <div
+                x-data
+                x-cloak
+                x-show="$store.filters.open"                
+                x-on:click="$store.filters.open = false"
+                x-transition:enter="transition-opacity ease-out duration-300"
+                x-transition:enter-start="opacity-0"
+                x-transition:enter-end="opacity-100"
+                x-transition:leave="transition-opacity ease-in duration-200"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                class="fixed inset-0 bg-black/50 z-40 xl:hidden"
+                aria-hidden="true"
+            ></div>
+
+            <!-- Filters Sidebar -->
+            <div
+                x-data
+                x-cloak
+                class="col-span-12 xl:col-span-3"
+                x-bind:class="$store.filters.open ? 'fixed inset-y-0 left-0 w-[90vw] md:w-[70vw] lg:w-[55vw] bg-white shadow-2xl z-50 overflow-y-auto xl:relative xl:inset-auto xl:w-auto xl:max-w-none xl:shadow-none xl:z-auto' : 'hidden xl:block'"
+                x-transition:enter="transition ease-out duration-300 transform xl:transition-none"
+                x-transition:enter-start="-translate-x-full xl:translate-x-0"
+                x-transition:enter-end="translate-x-0"
+                x-transition:leave="transition ease-in duration-200 transform xl:transition-none"
+                x-transition:leave-start="translate-x-0"
+                x-transition:leave-end="-translate-x-full xl:translate-x-0"
+            >
+                <!-- Mobile Header -->
+                <div class="xl:hidden sticky top-0 bg-white border-b border-gray-200 p-4 flex items-center justify-between z-10">
+                    <div class="flex items-center gap-2" x-data="{ count: 0 }" x-on:entries-updated.window="count = $event.detail?.count ?? 0">
+                        <h2 class="text-lg font-semibold text-main">Showing <span class="font-bold" x-text="count"></span> entries</h2>
+                    </div>
+                    <button
+                        @click="$store.filters.open = false"
+                        type="button"
+                        class="p-2 rounded-md text-gray-500 hover:text-main hover:bg-gray-100 transition-colors duration-200"
+                        aria-label="Close filters"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
                 </div>
-                {{ livewire:lf-text-filter
-                    blueprint="cars.car"
-                    field="title"
-                    condition="contains"
-                }}
-            </div>
-            <div class="mb-8">
-                <div class="mb-2 font-bold">
-                    Car brand
+
+                <!-- Filter Content -->
+                <div class="p-4 xl:p-0">
+                    <div class="mb-8">
+                        <div class="mb-2 font-bold">
+                            Search by name
+                        </div>
+                        {{ livewire:lf-text-filter
+                            blueprint="cars.car"
+                            field="title"
+                            condition="contains"
+                            placeholder="Search cars..."
+                        }}
+                    </div>
+                    <div class="mb-8">
+                        <div class="mb-2 font-bold">
+                            Car brand
+                        </div>
+                        {{ livewire:lf-checkbox-filter
+                            blueprint="cars.car"
+                            field="car_brand"
+                            condition="taxonomy"
+                        }}
+                    </div>
+                    <div class="mb-8">
+                        <div class="mb-2 font-bold">
+                            Transmission
+                        </div>
+                        {{ livewire:lf-radio-filter
+                            blueprint="cars.car"
+                            field="transmission"
+                            condition="is"
+                        }}
+                    </div>
+                    <div class="mb-8">
+                        <div class="mb-2 font-bold">
+                            Fuel type
+                        </div>
+                        {{ livewire:lf-select-filter
+                            blueprint="cars.car"
+                            field="fuel_type"
+                            condition="is"
+                        }}
+                    </div>
+                    <div class="mb-8">
+                        <div class="mb-2 font-bold">
+                            Registration date after
+                        </div>
+                        {{ livewire:lf-date-filter
+                            blueprint="cars.car"
+                            field="date_of_registration"
+                            condition="gte"
+                            placeholder="Please select"
+                        }}
+                    </div>
                 </div>
-                {{ livewire:lf-checkbox-filter
-                    blueprint="cars.car"
-                    field="car_brand"
-                    condition="taxonomy"
-                }}
             </div>
-            <div class="mb-8">
-                <div class="mb-2 font-bold">
-                    Transmission
+            <div class="col-span-12 xl:col-span-9">
+                <div class="mb-4">
+                    {{ livewire:lf-tags blueprint="cars.car" fields="title|car_brand|transmission|fuel_type" }}
                 </div>
-                {{ livewire:lf-radio-filter
-                    blueprint="cars.car"
-                    field="transmission"
-                    condition="is"
-                }}
-            </div>
-            <div class="mb-8">
-                <div class="mb-2 font-bold">
-                    Fuel type
+                <div class="@container">
+                    {{ livewire-collection:cars paginate="9" scrollTo="#livewire-collection" }}
                 </div>
-                {{ livewire:lf-select-filter
-                    blueprint="cars.car"
-                    field="fuel_type"
-                    condition="is"
-                }}
-            </div>
-        </div>
-        <div class="col-span-9">
-            <div class="mb-4">
-                {{ livewire:lf-tags blueprint="cars.car" fields="title|car_brand|transmission|fuel_type" }}
-            </div>
-            <div class="@container">
-                {{ livewire-collection:cars paginate="9" scrollTo="livewire-collection" }}
             </div>
         </div>
     </div>
+  
 </div>
 
 {{ /partial:examples/layout }}
+
+{{ push:scripts }}
+<script>
+document.addEventListener('alpine:init', () => {
+    Alpine.store('filters', {
+        open: false,
+
+        toggle() {
+            this.open = ! this.open
+        }
+    })
+})
+</script>
+{{ /push:scripts }}

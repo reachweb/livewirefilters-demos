@@ -2,7 +2,7 @@
 
 return [
     // Enable the query string feature of Livewire, saving the filters in the URL
-    'enable_query_string' => false,
+    'enable_query_string' => true,
 
     // Validate that the values of radio and checkbox filters are in the available options array
     'validate_filter_values' => true,
