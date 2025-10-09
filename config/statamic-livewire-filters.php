@@ -2,7 +2,7 @@
 
 return [
     // Enable the query string feature of Livewire, saving the filters in the URL
-    'enable_query_string' => true,
+    'enable_query_string' => false,
 
     // Validate that the values of radio and checkbox filters are in the available options array
     'validate_filter_values' => true,
@@ -17,10 +17,17 @@ return [
     'enable_filter_values_count' => true,
 
     // Enable custom query string
-    'custom_query_string' => false,
+    'custom_query_string' => 'search',
 
     // Set the aliases for each custom query string parameter
     'custom_query_string_aliases' => [
-        //
+        'seats' => 'seats:gte',
+        'brand' => 'taxonomy:car_brand:any',
+        'transmission' => 'transmission:is',
+        'categories' => 'query_scope:multiselect:special_categories',
+        'fuel' => 'fuel_type:is',
+        'ac' => 'air_condition:is',
+        'model-year-after' => 'date_of_registration:is_after',
+        'model-year-before' => 'date_of_registration:is_before',
     ],
 ];
