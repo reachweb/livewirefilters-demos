@@ -29,6 +29,5 @@ return [
         'ac' => 'air_condition:is',
         'model-year-after' => 'date_of_registration:is_after',
         'model-year-before' => 'date_of_registration:is_before',
-        'new-model' => 'date_of_registration:gte',
     ],
 ];
