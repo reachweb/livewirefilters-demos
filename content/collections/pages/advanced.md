@@ -3,7 +3,7 @@ id: 9f25ca63-c51a-4a88-9754-2d18e6e61cf2
 blueprint: page
 title: Advanced
 updated_by: 935d2204-f6fd-4b26-ac58-6c66c4675ef1
-updated_at: 1759745916
+updated_at: 1762341163
 builder:
   -
     id: mbe8f1pm
@@ -201,7 +201,7 @@ builder:
                         {{ livewire:lf-toggle-filter
                             blueprint="cars.car"
                             field="date_of_registration"
-                            condition="gte"
+                            condition="is_after"
                             preset_value="2025-01-01"
                             label="Only new vehicles"
                         }}
@@ -301,4 +301,5 @@ builder:
     type: code
     enabled: true
 template: examples/advanced
+hide_title: false
 ---
