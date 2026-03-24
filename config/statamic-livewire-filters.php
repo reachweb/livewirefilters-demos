@@ -21,6 +21,7 @@ return [
 
     // Set the aliases for each custom query string parameter
     'custom_query_string_aliases' => [
+        'title' => 'title:contains',
         'seats' => 'seats:gte',
         'brand' => 'taxonomy:car_brand:any',
         'transmission' => 'transmission:is',
