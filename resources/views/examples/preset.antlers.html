@@ -83,6 +83,7 @@
                 </div>
 
                 <!-- Filter Content -->
+                {{ nocache }}
                 <div class="p-4 xl:p-0">
                     <div class="mb-8">
                         <div class="mb-2 font-bold">
@@ -136,7 +137,9 @@
                         }}
                     </div>
                 </div>
+                {{ /nocache }}
             </div>
+            {{ nocache }}
             <div class="col-span-12 xl:col-span-9">
                 <div class="mb-4">
                     {{ livewire:lf-tags blueprint="cars.car" fields="date_of_registration|car_brand|special_categories|transmission|fuel_type" }}
@@ -151,6 +154,7 @@
                     </div>
                 </div>
             </div>
+            {{ /nocache }}
         </div>
     </div>
 

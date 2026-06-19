@@ -1,0 +1,70 @@
+<div class="not-prose space-y-6">
+
+    <section class="bg-white p-4 lg:p-6 shadow rounded-md">
+        <h2 class="text-lg font-bold text-main mb-2">Outside any island</h2>
+        <p class="mb-1">Outer count: <strong>{{ outerCount }}</strong></p>
+        <p class="mb-4 text-sm text-gray-500">Rendered at <code>{{ renderedAt }}</code></p>
+        <div class="flex flex-wrap gap-2">
+            <button
+                wire:click="incrementOuter"
+                type="button"
+                class="bg-main text-white px-4 py-2 rounded-md hover:bg-alt transition-colors duration-200"
+            >
+                Increment outer
+            </button>
+            <button
+                wire:click="refreshStatsFromPhp"
+                type="button"
+                class="bg-white text-main border border-main px-4 py-2 rounded-md hover:bg-gray-50 transition-colors duration-200"
+            >
+                Re-render island from PHP
+            </button>
+        </div>
+        <p class="mt-4 text-sm text-gray-500">
+            Clicking <em>Increment outer</em> re-renders the component, but the islands below keep
+            their timestamps: islands are skipped on parent updates.
+            <em>Re-render island from PHP</em> calls <code>$this->renderIsland('stats')</code> on the server.
+        </p>
+    </section>
+
+    {{ livewire:island name="stats" }}
+        <section class="bg-white p-4 lg:p-6 shadow rounded-md border-2 border-main">
+            <h2 class="text-lg font-bold text-main mb-2">Island: stats</h2>
+            <p class="mb-1">Island count: <strong>{{ islandCount }}</strong></p>
+            <p class="mb-4 text-sm text-gray-500">Rendered at <code>{{ renderedAt }}</code></p>
+            {{ if phpMessage }}
+                <p class="mb-4 text-sm font-medium text-alt">{{ phpMessage }}</p>
+            {{ /if }}
+            <button
+                wire:click="incrementIsland"
+                type="button"
+                class="bg-main text-white px-4 py-2 rounded-md hover:bg-alt transition-colors duration-200"
+            >
+                Increment island
+            </button>
+            <p class="mt-4 text-sm text-gray-500">
+                Clicking this button only re-renders this island &mdash; the timestamps outside don't change.
+            </p>
+        </section>
+    {{ /livewire:island }}
+
+    {{ livewire:island name="heavy" defer="true" }}
+        {{ placeholder }}
+            <section class="bg-white p-4 lg:p-6 shadow rounded-md animate-pulse">
+                <h2 class="text-lg font-bold text-main mb-2">Deferred island</h2>
+                <div class="h-4 bg-gray-200 rounded w-2/3 mb-2"></div>
+                <div class="h-4 bg-gray-200 rounded w-1/2"></div>
+            </section>
+        {{ /placeholder }}
+        <section class="bg-white p-4 lg:p-6 shadow rounded-md border-2 border-dashed border-main">
+            <h2 class="text-lg font-bold text-main mb-2">Deferred island</h2>
+            <p class="mb-1">{{ expensiveStat }}</p>
+            <p class="text-sm text-gray-500">
+                This island took a second to compute, so it was deferred with
+                <code>defer="true"</code>: the page loaded instantly with a skeleton placeholder and
+                the content arrived in a follow-up request via <code>wire:init</code>.
+            </p>
+        </section>
+    {{ /livewire:island }}
+
+</div>

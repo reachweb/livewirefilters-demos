@@ -7,6 +7,7 @@
         <title>{{ unless hide_title }}{{ seo_title ?? title }} | {{ /unless }} {{ site_config:site_name }}</title>
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
         {{ livewire:styles }}
+        {{ livewire-filters:head }}
         <link rel="stylesheet" href="/vendor/statamic-livewire-filters/frontend/css/livewire-filters.css">
     </head>
     <body class="relative font-sans leading-normal text-slate-800 min-h-screen">

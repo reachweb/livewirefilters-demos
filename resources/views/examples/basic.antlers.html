@@ -75,6 +75,7 @@
                 </div>
 
                 <!-- Filter Content -->
+                {{ nocache }}
                 <div class="p-4 xl:p-0">
                     <div class="mb-8">
                         <div class="mb-2 font-bold">
@@ -84,7 +85,7 @@
                             blueprint="cars.car"
                             field="title"
                             condition="contains"
-                            placeholder="Search cars..."
+                        placeholder="Search cars..."
                         }}
                     </div>
                     <div class="mb-8">
@@ -129,7 +130,9 @@
                         }}
                     </div>
                 </div>
+                {{ /nocache }}
             </div>
+            {{ nocache }}
             <div class="col-span-12 xl:col-span-9">
                 <div class="mb-4">
                     {{ livewire:lf-tags blueprint="cars.car" fields="title|car_brand|transmission|fuel_type" }}
@@ -138,6 +141,7 @@
                     {{ livewire-collection:cars paginate="9" scrollTo="#livewire-collection" }}
                 </div>
             </div>
+            {{ /nocache }}
         </div>
     </div>
   
