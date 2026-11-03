@@ -15,6 +15,7 @@ air_condition: airCondition
 extras: 9cfd1b87-0199-41f4-b655-d602eb46fa49
 fuel_type: superUnl
 seo_no_index: false
+car_model: i20
 car_brand: hyundai
 date_of_registration: '2021-01-01'
 price: 11000

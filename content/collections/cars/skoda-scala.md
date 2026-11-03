@@ -18,6 +18,7 @@ seo_no_index: false
 updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1705684180
 resrv_availability: disabled
+car_model: scala
 car_brand: skoda
 date_of_registration: '2021-01-01'
 content:

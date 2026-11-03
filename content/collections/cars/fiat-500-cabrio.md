@@ -17,6 +17,7 @@ updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1704748621
 resrv_availability: disabled
 seo_no_index: false
+car_model: '500'
 car_brand: fiat
 date_of_registration: '2021-01-01'
 price: 8000

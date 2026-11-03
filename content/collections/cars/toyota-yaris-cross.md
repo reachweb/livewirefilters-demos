@@ -17,6 +17,7 @@ updated_by: 935d2204-f6fd-4b26-ac58-6c66c4675ef1
 updated_at: 1759733262
 resrv_availability: 254eeabd-6962-4143-8a2e-524b5c8773f5
 seo_social_media_image: yaris-cross.png
+car_model: yaris-cross
 car_brand: toyota
 date_of_registration: '2025-02-01'
 price: 15000

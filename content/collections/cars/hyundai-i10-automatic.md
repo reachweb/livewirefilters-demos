@@ -18,6 +18,7 @@ updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1704748782
 resrv_availability: disabled
 date_of_registration: '2021-01-01'
+car_model: i10
 car_brand: hyundai
 content:
   -
