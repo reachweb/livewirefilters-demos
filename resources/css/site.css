@@ -6,6 +6,8 @@
 
 @source "../views";
 @source "../../content";
+@source "../../vendor/reachweb/statamic-livewire-filters/resources/views/livewire/ui/drawer.blade.php";
+@source "../../vendor/reachweb/statamic-livewire-filters/resources/views/livewire/ui/apply-button.blade.php";
 
 @import "./livewire-filters-theme.css";
 
