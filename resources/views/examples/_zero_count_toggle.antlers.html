@@ -1,0 +1,8 @@
+<div class="flex flex-wrap items-center gap-2 text-sm">
+    <span class="font-bold">Options without results:</span>
+    <div class="inline-flex rounded-md border border-gray-300 overflow-hidden">
+        <a href="?zero_count=show" class="px-3 py-1 {{ zc == 'show' ? 'bg-main text-white' : 'bg-white text-gray-700 hover:bg-gray-100' }}">Show</a>
+        <a href="?zero_count=hide" class="px-3 py-1 border-l border-gray-300 {{ zc == 'hide' ? 'bg-main text-white' : 'bg-white text-gray-700 hover:bg-gray-100' }}">Hide</a>
+        <a href="?zero_count=disable" class="px-3 py-1 border-l border-gray-300 {{ zc == 'disable' ? 'bg-main text-white' : 'bg-white text-gray-700 hover:bg-gray-100' }}">Disable</a>
+    </div>
+</div>
