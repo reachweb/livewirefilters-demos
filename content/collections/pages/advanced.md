@@ -163,6 +163,33 @@ builder:
                 content:
                   -
                     type: text
+                    text: 'An LfRadioFilter with '
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: code
+                    text: buckets
+                  -
+                    type: text
+                    text: ' to pick a '
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: Price
+                  -
+                    type: text
+                    text: ' range from a list, with the number of cars in each'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
                     text: 'An LfCount component to display the number of cars found for each search'
           -
             type: listItem
@@ -268,6 +295,16 @@ builder:
                             field="date_of_registration"
                             min="2019"
                             max="2025"
+                        }}
+                    </div>
+                    <div class="mb-8">
+                        <div class="mb-2 font-bold">
+                            Price
+                        </div>
+                        {{ livewire:lf-radio-filter
+                            blueprint="cars.car"
+                            field="price"
+                            buckets="0-12000|12000-16000|16000-20000|20000-"
                         }}
                     </div>
                     <div class="mb-8">
