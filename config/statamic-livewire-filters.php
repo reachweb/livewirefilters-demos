@@ -16,6 +16,9 @@ return [
     // The addon will calculate the number of entries for each filter value (can be slow for a large number of entries)
     'enable_filter_values_count' => true,
 
+    // Narrow range sliders to the other active filters (needed for the dual range histogram)
+    'enable_dynamic_range_bounds' => true,
+
     // Enable custom query string
     'custom_query_string' => 'search',
 

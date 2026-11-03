@@ -152,6 +152,20 @@
                     </div>
                     <div class="mb-8">
                         <div class="mb-2 font-bold">
+                            Price
+                        </div>
+                        {{ livewire:lf-dual-range-filter
+                            blueprint="cars.car"
+                            field="price"
+                            min="8000"
+                            max="27000"
+                            step="500"
+                            minRange="500"
+                            histogram="20"
+                        }}
+                    </div>
+                    <div class="mb-8">
+                        <div class="mb-2 font-bold">
                             Seats (at least)
                         </div>
                         {{ livewire:lf-range-filter
