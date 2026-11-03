@@ -16,6 +16,9 @@ return [
     // The addon will calculate the number of entries for each filter value (can be slow for a large number of entries)
     'enable_filter_values_count' => true,
 
+    // Send the filter state to filters with `depends_on`, so they can narrow their options to the parent's value
+    'enable_dependent_filters' => true,
+
     // Enable custom query string
     'custom_query_string' => 'search',
 
@@ -24,6 +27,7 @@ return [
         'title' => 'title:contains',
         'seats' => 'seats:gte',
         'brand' => 'taxonomy:car_brand:any',
+        'model' => 'car_model:in',
         'transmission' => 'transmission:is',
         'categories' => 'query_scope:multiselect:special_categories',
         'fuel' => 'fuel_type:is',

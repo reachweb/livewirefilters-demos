@@ -16,6 +16,7 @@ extras: 4ce6a2d3-956e-4811-801a-610d43703bff
 fuel_type: diesel
 seo_no_index: false
 date_of_registration: '2023-01-01'
+car_model: i10
 car_brand: hyundai
 price: 13000
 ---

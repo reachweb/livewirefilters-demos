@@ -18,6 +18,7 @@ special_categories:
   - four-wheel-drive
   - luxury
 seo_no_index: false
+car_model: hummer-h3
 car_brand: jeep
 date_of_registration: '2020-01-01'
 price: 23000

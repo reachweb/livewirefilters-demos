@@ -14,6 +14,7 @@ seo_no_index: false
 updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1704749033
 resrv_availability: 5e3c3862-8636-4f2e-9be5-9e83a103e492
+car_model: micra
 car_brand: nissan
 date_of_registration: '2023-01-01'
 price: 13000
