@@ -6,6 +6,7 @@
 
 @source "../views";
 @source "../../content";
+@source "../../vendor/reachweb/statamic-livewire-filters/resources/views";
 
 @import "./livewire-filters-theme.css";
 
