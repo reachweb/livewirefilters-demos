@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5e80552023f2fe9541ca76e130dce48",
+    "content-hash": "95a440b1ae47e1bae09e0eaf95da9ec0",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -4829,23 +4829,23 @@
         },
         {
             "name": "reachweb/statamic-livewire-filters",
-            "version": "v4.5.0",
+            "version": "v4.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reachweb/statamic-livewire-filters.git",
-                "reference": "933fd67cf6ccf3352281f73c4f31082f0dad42a6"
+                "reference": "fc21bfd8fc18a18e15dcf08e544574c72b695f39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reachweb/statamic-livewire-filters/zipball/933fd67cf6ccf3352281f73c4f31082f0dad42a6",
-                "reference": "933fd67cf6ccf3352281f73c4f31082f0dad42a6",
+                "url": "https://api.github.com/repos/reachweb/statamic-livewire-filters/zipball/fc21bfd8fc18a18e15dcf08e544574c72b695f39",
+                "reference": "fc21bfd8fc18a18e15dcf08e544574c72b695f39",
                 "shasum": ""
             },
             "require": {
                 "illuminate/support": "^11.0 || ^12.0 || ^13.0",
                 "laravel/framework": "^11.0 || ^12.0 || ^13.0",
                 "marcorieser/statamic-livewire": "^5.0",
-                "statamic/cms": "^5.0 || ^6.0"
+                "statamic/cms": "^5.29 || ^6.0"
             },
             "require-dev": {
                 "laravel/pint": "^1.15",
@@ -4890,9 +4890,9 @@
             "support": {
                 "email": "info@reach.gr",
                 "issues": "https://github.com/reachweb/statamic-livewire-filters/issues",
-                "source": "https://github.com/reachweb/statamic-livewire-filters/tree/v4.5.0"
+                "source": "https://github.com/reachweb/statamic-livewire-filters/tree/v4.6.2"
             },
-            "time": "2026-06-19T11:45:06+00:00"
+            "time": "2026-11-04T13:13:09+00:00"
         },
         {
             "name": "rebing/graphql-laravel",
@@ -13545,9 +13545,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "reachweb/statamic-livewire-filters": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

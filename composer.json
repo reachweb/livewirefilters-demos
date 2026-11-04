@@ -14,7 +14,7 @@
         "laravel/framework": "^13.0",
         "laravel/tinker": "^3.0.0",
         "marcorieser/statamic-livewire": "^5.0.0",
-        "reachweb/statamic-livewire-filters": "@dev",
+        "reachweb/statamic-livewire-filters": "^4.6.2",
         "statamic/cms": "^6.0",
         "torchlight/engine": "^0.1.0"
     },
