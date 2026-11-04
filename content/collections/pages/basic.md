@@ -23,7 +23,7 @@ builder:
             text: 'Livewire Filters'
           -
             type: text
-            text: ' in just a few minutes. Here, we are filtering a collection using four components:'
+            text: ' in just a few minutes. Here, we are filtering a collection using five components:'
       -
         type: bulletList
         content:
@@ -89,7 +89,7 @@ builder:
                 content:
                   -
                     type: text
-                    text: 'And an LfSelectFilter for the '
+                    text: 'An LfSelectFilter for the '
                   -
                     type: text
                     marks:
@@ -99,6 +99,33 @@ builder:
                   -
                     type: text
                     text: ' select field'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'And an LfRadioFilter with '
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: code
+                    text: buckets
+                  -
+                    type: text
+                    text: ' that turns the '
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: Price
+                  -
+                    type: text
+                    text: ' field into a list of price ranges'
       -
         type: paragraph
         content:
@@ -163,10 +190,20 @@ builder:
                             condition="is"
                         }}
                     </div>
+                    <div class="mb-8">
+                        <div class="mb-2 font-bold">
+                            Price
+                        </div>
+                        {{ livewire:lf-radio-filter
+                            blueprint="cars.car"
+                            field="price"
+                            buckets="0-12000|12000-16000|16000-20000|20000-"
+                        }}
+                    </div>
                 </div>
                 <div class="col-span-9">
                     <div class="mb-4">
-                        {{ livewire:lf-tags blueprint="cars.car" fields="title|car_brand|transmission|fuel_type" }}
+                        {{ livewire:lf-tags blueprint="cars.car" fields="title|car_brand|transmission|fuel_type|price" }}
                     </div>
                     <div>
                         {{ livewire-collection:cars paginate="9" scrollTo="#livewire-collection" }}

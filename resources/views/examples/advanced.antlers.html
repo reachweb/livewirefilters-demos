@@ -152,6 +152,16 @@
                     </div>
                     <div class="mb-8">
                         <div class="mb-2 font-bold">
+                            Price
+                        </div>
+                        {{ livewire:lf-radio-filter
+                            blueprint="cars.car"
+                            field="price"
+                            buckets="0-12000|12000-16000|16000-20000|20000-"
+                        }}
+                    </div>
+                    <div class="mb-8">
+                        <div class="mb-2 font-bold">
                             Seats (at least)
                         </div>
                         {{ livewire:lf-range-filter
