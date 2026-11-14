@@ -40,7 +40,6 @@ builder:
             blueprint="cars.car"
             field="car_brand"
             condition="taxonomy"
-            view="lf-checkbox-advanced"
         }}
 
         {{ livewire:lf-checkbox-filter
@@ -57,7 +56,6 @@ builder:
             field="fuel_type"
             condition="is"
             depends_on="car_brand|car_model"
-            view="lf-select-advanced"
         }}
 
         {{# Tell the visitor what a new brand removed #}}
