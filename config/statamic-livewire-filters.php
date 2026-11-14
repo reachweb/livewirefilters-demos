@@ -37,4 +37,7 @@ return [
         'price-from' => 'price:gte',
         'price-to' => 'price:lt',
     ],
+
+    // Send noindex and canonical headers for filter URLs, which share one cached page with the custom query string
+    'seo_filter_headers' => true,
 ];
