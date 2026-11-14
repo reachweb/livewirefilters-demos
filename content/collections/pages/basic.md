@@ -194,10 +194,18 @@ builder:
                         <div class="mb-2 font-bold">
                             Price
                         </div>
+                        {{ price_labels = [
+                            '0-12000' => 'Under €12,000',
+                            '12000-16000' => '€12,000 to €16,000',
+                            '16000-20000' => '€16,000 to €20,000',
+                            '20000-' => '€20,000 and up'
+                        ] }}
                         {{ livewire:lf-radio-filter
                             blueprint="cars.car"
                             field="price"
                             buckets="0-12000|12000-16000|16000-20000|20000-"
+                            modifier="gte|lt"
+                            :options="price_labels"
                         }}
                     </div>
                 </div>
