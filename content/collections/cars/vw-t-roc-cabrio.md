@@ -17,6 +17,7 @@ updated_at: 1705685054
 resrv_availability: ffb1d766-1861-4e7e-9932-5269b082897a
 car_category:
   - j3
+car_model: t-roc
 car_brand: vw
 date_of_registration: '2021-01-01'
 price: 16000

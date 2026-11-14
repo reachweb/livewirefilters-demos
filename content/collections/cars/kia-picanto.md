@@ -17,6 +17,7 @@ fuel_type: superUnl
 seo_no_index: false
 seo_title: 'Kos Car Hire'
 seo_description: 'Rent a car in Kos Airport'
+car_model: picanto
 car_brand: kia
 date_of_registration: '2023-01-01'
 price: 13000

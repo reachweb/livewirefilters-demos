@@ -18,6 +18,7 @@ updated_at: 1704748907
 resrv_availability: 3acd4dc9-417e-46bd-926b-365426033ff1
 seo_title: 'Rent a car in Kos. Kia Stonic 2023.'
 seo_description: 'Rent a car in Kos. Kia Stonic 2023.'
+car_model: stonic
 car_brand: kia
 date_of_registration: '2023-01-01'
 content:

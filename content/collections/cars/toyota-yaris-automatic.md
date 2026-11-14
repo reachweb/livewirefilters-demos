@@ -17,6 +17,7 @@ seo_no_index: false
 updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1705684927
 resrv_availability: f046a496-4c9e-47a7-9e1d-ffcda878a4e4
+car_model: yaris
 car_brand: toyota
 date_of_registration: '2022-01-01'
 content:

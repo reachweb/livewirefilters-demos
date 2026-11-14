@@ -16,6 +16,7 @@ seo_no_index: false
 updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1705448196
 resrv_availability: 93c6a617-804e-4c4c-b936-8739638e652b
+car_model: q3
 car_brand: audi
 date_of_registration: '2022-01-01'
 price: 27000

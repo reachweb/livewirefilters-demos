@@ -19,6 +19,7 @@ updated_at: 1705448220
 resrv_availability: fee88790-18f0-44cb-a996-661ec1e126dd
 seo_title: 'Kos Car Hire'
 seo_description: 'Hire hybrid car in kos island'
+car_model: c-hr
 car_brand: toyota
 date_of_registration: '2024-01-01'
 price: 17000
