@@ -75,8 +75,12 @@
                 </div>
 
                 <!-- Filter Content -->
+                {{ zc = (get:zero_count == 'hide' || get:zero_count == 'disable') ? get:zero_count : 'show' }}
                 {{ nocache }}
                 <div class="p-4 xl:p-0">
+                    <div class="mb-8">
+                        {{ partial:examples/zero_count_toggle }}
+                    </div>
                     <div class="mb-8">
                         {{ livewire:lf-toggle-filter
                             blueprint="cars.car"
@@ -96,6 +100,7 @@
                             condition="taxonomy"
                             view="lf-checkbox-advanced"
                             searchable="true"
+                            :zero_count="zc"
                         }}
                     </div>
                     <div class="mb-8">
@@ -107,6 +112,7 @@
                             field="special_categories"
                             condition="query_scope"
                             modifier="multiselect"
+                            :zero_count="zc"
                         }}
                     </div>
                     <div class="mb-8">
@@ -117,6 +123,7 @@
                             blueprint="cars.car"
                             field="transmission"
                             condition="is"
+                            :zero_count="zc"
                         }}
                     </div>
                     <div class="mb-8">
@@ -127,6 +134,7 @@
                             blueprint="cars.car"
                             field="fuel_type"
                             condition="is"
+                            :zero_count="zc"
                         }}
                     </div>
                     <div class="mb-8">
@@ -137,6 +145,7 @@
                             blueprint="cars.car"
                             field="air_condition"
                             condition="is"
+                            :zero_count="zc"
                         }}
                     </div>
                     <div class="mb-8">
