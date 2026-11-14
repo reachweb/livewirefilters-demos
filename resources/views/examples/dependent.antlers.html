@@ -77,7 +77,7 @@
                 <!-- Filter Content -->
                 {{ nocache }}
                 <div class="p-4 xl:p-0">
-                    <div class="mb-8">
+                    <div class="mb-6">
                         <div class="mb-2 font-bold">
                             Car brand
                         </div>
@@ -87,7 +87,29 @@
                             condition="taxonomy"
                         }}
                     </div>
-                    <div class="mb-8">
+                    <div
+                        x-data="{ cleared: [], timer: null }"
+                        x-on:dependent-selection-cleared.window="
+                            cleared.push(...$event.detail.labels);
+                            clearTimeout(timer);
+                            timer = setTimeout(() => cleared = [], 6000);
+                        "
+                        x-show="cleared.length > 0"
+                        x-transition.opacity
+                        x-cloak
+                        role="status"
+                        class="mb-6 flex items-start gap-2 rounded-md bg-amber-50 border border-amber-200 px-3 py-2 text-sm text-amber-900"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 shrink-0">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                        </svg>
+                        <span>Removed <strong x-text="cleared.join(', ')"></strong>: not available for your new selection.</span>
+                    </div>
+                    <div
+                        class="mb-6"
+                        x-data="{ narrowed: location.pathname.includes('/brand/') }"
+                        x-on:available-options-updated="narrowed = Object.values($event.detail)[0] !== null"
+                    >
                         <div class="mb-2 font-bold">
                             Car model
                         </div>
@@ -96,9 +118,13 @@
                             field="car_model"
                             condition="in"
                             depends_on="car_brand"
+                            view="lf-checkbox-advanced"
+                            searchable="true"
+                            placeholder="Any model"
                         }}
+                        <p x-show="! narrowed" x-cloak class="mt-2 text-sm text-gray-500">Pick a brand to see only its models.</p>
                     </div>
-                    <div class="mb-8">
+                    <div class="mb-6">
                         <div class="mb-2 font-bold">
                             Fuel type
                         </div>
@@ -106,6 +132,7 @@
                             blueprint="cars.car"
                             field="fuel_type"
                             condition="is"
+                            depends_on="car_brand|car_model"
                         }}
                     </div>
                 </div>

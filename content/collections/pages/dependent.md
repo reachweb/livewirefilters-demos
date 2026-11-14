@@ -12,31 +12,30 @@ builder:
         content:
           -
             type: text
-            text: 'The '
-          -
-            type: text
             marks:
               -
                 type: bold
             text: 'Car model'
           -
             type: text
-            text: ' filter depends on the '
+            text: ' only lists the models of the brands you pick, and '
           -
             type: text
             marks:
               -
                 type: bold
-            text: 'Car brand'
+            text: 'Fuel type'
           -
             type: text
-            text: ' filter. Pick a brand and only that brand''s models stay in the list; a model that the new brand doesn''t have is unchecked. With no brand selected, every model is shown.'
+            text: ' follows both. When a new brand removes a choice, a notice tells you.'
     type: text
     enabled: true
   -
     id: dep1code01
     code:
       code: |-
+        {{# Needs 'enable_dependent_filters' => true in config/statamic-livewire-filters.php #}}
+
         {{ livewire:lf-checkbox-filter
             blueprint="cars.car"
             field="car_brand"
@@ -48,7 +47,30 @@ builder:
             field="car_model"
             condition="in"
             depends_on="car_brand"
+            view="lf-checkbox-advanced"
+            searchable="true"
         }}
+
+        {{ livewire:lf-select-filter
+            blueprint="cars.car"
+            field="fuel_type"
+            condition="is"
+            depends_on="car_brand|car_model"
+        }}
+
+        {{# Tell the visitor what a new brand removed #}}
+        <div
+            x-data="{ cleared: [], timer: null }"
+            x-on:dependent-selection-cleared.window="
+                cleared.push(...$event.detail.labels);
+                clearTimeout(timer);
+                timer = setTimeout(() => cleared = [], 6000);
+            "
+            x-show="cleared.length > 0"
+            x-cloak
+        >
+            Removed <strong x-text="cleared.join(', ')"></strong>: not available for your new selection.
+        </div>
       mode: htmlmixed
     language: antlers
     type: code
