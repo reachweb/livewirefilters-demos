@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95a440b1ae47e1bae09e0eaf95da9ec0",
+    "content-hash": "225f5282db8bfe29747813d79a05501a",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -4829,16 +4829,16 @@
         },
         {
             "name": "reachweb/statamic-livewire-filters",
-            "version": "v4.6.2",
+            "version": "v4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reachweb/statamic-livewire-filters.git",
-                "reference": "fc21bfd8fc18a18e15dcf08e544574c72b695f39"
+                "reference": "f57dc25d40718229d72dfc7d17f5a8c5c9b368d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reachweb/statamic-livewire-filters/zipball/fc21bfd8fc18a18e15dcf08e544574c72b695f39",
-                "reference": "fc21bfd8fc18a18e15dcf08e544574c72b695f39",
+                "url": "https://api.github.com/repos/reachweb/statamic-livewire-filters/zipball/f57dc25d40718229d72dfc7d17f5a8c5c9b368d9",
+                "reference": "f57dc25d40718229d72dfc7d17f5a8c5c9b368d9",
                 "shasum": ""
             },
             "require": {
@@ -4890,9 +4890,10 @@
             "support": {
                 "email": "info@reach.gr",
                 "issues": "https://github.com/reachweb/statamic-livewire-filters/issues",
-                "source": "https://github.com/reachweb/statamic-livewire-filters/tree/v4.6.2"
+                "source": "https://github.com/reachweb/statamic-livewire-filters/tree/v4.7.0"
             },
-            "time": "2026-11-04T13:13:09+00:00"
+            "time": "2026-11-14T14:34:58+00:00",
+            "published-time": "2026-11-14T14:35:09+00:00"
         },
         {
             "name": "rebing/graphql-laravel",
@@ -13552,5 +13553,5 @@
         "php": "^8.2"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.11.0"
 }
