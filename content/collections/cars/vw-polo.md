@@ -14,6 +14,7 @@ seo_no_index: false
 updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1704750373
 resrv_availability: d8027c0b-6905-42c9-9cec-edbb9863fe7c
+car_model: polo
 car_brand: vw
 date_of_registration: '2021-01-01'
 price: 16000

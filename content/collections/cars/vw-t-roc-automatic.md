@@ -17,6 +17,7 @@ seo_no_index: false
 updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1705685310
 resrv_availability: e3965ac8-44b2-4cf2-89e2-8b2f93abb87f
+car_model: t-roc
 car_brand: vw
 date_of_registration: '2021-01-01'
 content:

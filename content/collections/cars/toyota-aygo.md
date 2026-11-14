@@ -18,6 +18,7 @@ seo_title: 'Kos Rent a Car'
 seo_description: |-
   Rent a car in Kos Island.
   Kos Island car hire delivery to hotel.
+car_model: aygo
 car_brand: toyota
 date_of_registration: '2021-01-01'
 price: 14000

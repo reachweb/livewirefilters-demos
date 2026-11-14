@@ -16,6 +16,7 @@ seo_no_index: false
 updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1704750349
 resrv_availability: cc5b60d7-d700-49e6-8e83-efe92c5eebfc
+car_model: caddy
 car_brand: vw
 date_of_registration: '2020-01-01'
 price: 15000

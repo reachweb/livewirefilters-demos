@@ -15,6 +15,7 @@ seo_no_index: false
 updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1704750251
 resrv_availability: disabled
+car_model: v60
 car_brand: volvo
 date_of_registration: '2020-01-01'
 price: 20000

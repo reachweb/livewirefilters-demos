@@ -17,6 +17,7 @@ seo_no_index: false
 updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1730825961
 resrv_availability: disabled
+car_model: corolla
 car_brand: toyota
 date_of_registration: '2022-05-18'
 price: 15000

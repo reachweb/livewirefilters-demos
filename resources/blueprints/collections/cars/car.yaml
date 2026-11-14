@@ -30,6 +30,44 @@ tabs:
               mode: select
               max_items: 1
           -
+            handle: car_model
+            field:
+              options:
+                a3: 'A3'
+                q3: 'Q3'
+                c4-grand-picasso: 'C4 Grand Picasso'
+                spacetourer: 'SpaceTourer'
+                '500': '500'
+                panda: 'Panda'
+                i10: 'i10'
+                i20: 'i20'
+                i30: 'i30'
+                hummer-h3: 'Hummer H3'
+                picanto: 'Picanto'
+                stonic: 'Stonic'
+                cooper: 'Cooper'
+                micra: 'Micra'
+                nv200: 'NV200'
+                fabia: 'Fabia'
+                kamiq: 'Kamiq'
+                scala: 'Scala'
+                auris: 'Auris'
+                aygo: 'Aygo'
+                aygo-x: 'Aygo X'
+                c-hr: 'C-HR'
+                corolla: 'Corolla'
+                yaris: 'Yaris'
+                yaris-cross: 'Yaris Cross'
+                v60: 'V60'
+                caddy: 'Caddy'
+                polo: 'Polo'
+                t-cross: 'T-Cross'
+                t-roc: 'T-Roc'
+                transporter: 'Transporter'
+              max_items: 1
+              type: select
+              display: 'Car model'
+          -
             handle: transmission
             field:
               options:

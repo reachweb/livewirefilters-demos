@@ -18,6 +18,7 @@ seo_no_index: false
 updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1704749719
 resrv_availability: disabled
+car_model: aygo-x
 car_brand: toyota
 date_of_registration: '2023-01-01'
 content:

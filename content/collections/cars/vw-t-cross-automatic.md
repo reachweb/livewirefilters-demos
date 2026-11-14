@@ -17,6 +17,7 @@ updated_by: 38d2f7cb-982d-4d11-a874-2ba105610d54
 updated_at: 1730825941
 resrv_availability: ae0401e7-40de-4e98-aeb0-83744518ea41
 image: cars/tcross.jpg
+car_model: t-cross
 car_brand: vw
 date_of_registration: '2024-11-05'
 price: 19000
