@@ -120,6 +120,24 @@
                     </div>
                     <div class="mb-8">
                         <div class="mb-2 font-bold">
+                            Price
+                        </div>
+                        {{ price_labels = [
+                            '0-12000' => 'Under €12,000',
+                            '12000-16000' => '€12,000 to €16,000',
+                            '16000-20000' => '€16,000 to €20,000',
+                            '20000-' => '€20,000 and up'
+                        ] }}
+                        {{ livewire:lf-radio-filter
+                            blueprint="cars.car"
+                            field="price"
+                            buckets="0-12000|12000-16000|16000-20000|20000-"
+                            modifier="gte|lt"
+                            :options="price_labels"
+                        }}
+                    </div>
+                    <div class="mb-8">
+                        <div class="mb-2 font-bold">
                             Registration date after
                         </div>
                         {{ livewire:lf-date-filter
@@ -135,7 +153,7 @@
             {{ nocache }}
             <div class="col-span-12 xl:col-span-9">
                 <div class="mb-4">
-                    {{ livewire:lf-tags blueprint="cars.car" fields="title|car_brand|transmission|fuel_type" }}
+                    {{ livewire:lf-tags blueprint="cars.car" fields="title|car_brand|transmission|fuel_type|price" }}
                 </div>
                 <div class="@container">
                     {{ livewire-collection:cars paginate="9" scrollTo="#livewire-collection" }}
