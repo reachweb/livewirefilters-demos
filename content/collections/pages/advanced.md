@@ -163,6 +163,24 @@ builder:
                 content:
                   -
                     type: text
+                    text: 'An LfDualRange slider for '
+                  -
+                    type: text
+                    marks:
+                      -
+                        type: bold
+                    text: Price
+                  -
+                    type: text
+                    text: ' with a histogram behind the track, showing how many cars match each price band'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
                     text: 'An LfCount component to display the number of cars found for each search'
           -
             type: listItem
@@ -268,6 +286,20 @@ builder:
                             field="date_of_registration"
                             min="2019"
                             max="2025"
+                        }}
+                    </div>
+                    <div class="mb-8">
+                        <div class="mb-2 font-bold">
+                            Price
+                        </div>
+                        {{ livewire:lf-dual-range-filter
+                            blueprint="cars.car"
+                            field="price"
+                            min="8000"
+                            max="27000"
+                            step="500"
+                            minRange="500"
+                            histogram="20"
                         }}
                     </div>
                     <div class="mb-8">
